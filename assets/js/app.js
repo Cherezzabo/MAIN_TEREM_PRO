@@ -35,31 +35,25 @@ jQuery(document).ready(function ($) {
 	});
 
 	/*map*/
-	// var myMap2;
-	// ymaps.ready(init2);
+	var myMap2;
+	ymaps.ready(init2);
 
-
-	// function init2 () {
-	// 	myMap2 = new ymaps.Map('map', {
-	// 		center: [55.70200328, 37.76498550],
-	// 		zoom: 16,
-	// 		controls: []
-	// 	}),
-	// 	myMap2.behaviors
-	// 		.disable(['rightMouseButtonMagnifier' , 'scrollZoom'])
-	// 		myPlacemark = new ymaps.Placemark([55.70200328, 37.76498550], {
-	// 			hintContent: [
-	// 			''
-	// 		].join('')
-	// 		}, {
-	// 			iconLayout: 'default#image',
-	// 			iconImageHref: '/bitrix/templates/.default/assets/img/map-pin.png',
-	// 			iconImageSize: [47, 54],
-	// 			iconImageOffset: [-24, -54]
-	// 		});
-	// 	myMap2.geoObjects.add(myPlacemark);
-
-	// }
+	function init2() {
+		myMap2 = new ymaps.Map('map', {
+			center: [55.70200328, 37.76498550],
+			zoom: 16,
+			controls: []
+		}), myMap2.behaviors.disable(['rightMouseButtonMagnifier', 'scrollZoom']);
+		myPlacemark = new ymaps.Placemark([55.70200328, 37.76498550], {
+			hintContent: [''].join('')
+		}, {
+			iconLayout: 'default#image',
+			iconImageHref: '/bitrix/templates/.default/assets/img/map-pin.png',
+			iconImageSize: [47, 54],
+			iconImageOffset: [-24, -54]
+		});
+		myMap2.geoObjects.add(myPlacemark);
+	}
 	/*map END*/
 	/*var $threeSixty = $('.threesixty');
  $threeSixty.threeSixty({

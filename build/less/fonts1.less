@@ -1,0 +1,201 @@
+// fonts
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/bitrix/templates/.default/assets/fonts/RobotoRegular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+/* font-family: 'RobotoLight'; */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/bitrix/templates/.default/assets/fonts/RobotoLight.woff') format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+/* font-family: 'RobotoMedium'; */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/bitrix/templates/.default/assets/fonts/RobotoMedium.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+/* font-family: 'RobotoBold'; */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/bitrix/templates/.default/assets/fonts/RobotoBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 900;
+}
+   @font-face {
+   	font-family: 'Reforma';
+   	src: url('../fonts/RFG49.eot'); 
+   	src: url('../fonts/RFG49.eot?#iefix') format('embedded-opentype'),
+   		url('../fonts/RFG49.woff') format('woff'), 
+   		url('../fonts/RFG49.ttf')  format('truetype'), 
+   		url('../fonts/RFG49.svg#RFG49') format('svg'); 
+   	font-weight: 100;
+   	font-style: normal;
+   }
+   @font-face {
+   	font-family: 'Reforma';
+   	src: url('../fonts/RFG69.eot');
+   	src: url('../fonts/RFG69.eot?#iefix') format('embedded-opentype'),
+   		url('../fonts/RFG69.woff') format('woff'), 
+   		url('../fonts/RFG69.ttf')  format('truetype'), 
+   		url('../fonts/RFG69.svg#RFG49') format('svg'); 
+   	font-weight: 400;
+   	font-style: normal;
+   }
+   @font-face {
+   	font-family: 'Reforma';
+   	src: url('../fonts/RFG79.eot'); 
+   	src: url('../fonts/RFG79.eot?#iefix') format('embedded-opentype'), 
+   		url('../fonts/RFG79.woff') format('woff'), 
+   		url('../fonts/RFG79.ttf')  format('truetype'), 
+   		url('../fonts/RFG79.svg#RFG49') format('svg');
+   	font-weight: 600;
+   	font-style: normal;
+   }
+   @font-face {
+   	font-family: 'Reforma';
+   	src: url('../fonts/RFG89.eot'); 
+   	src: url('../fonts/RFG89.eot?#iefix') format('embedded-opentype'),
+   		url('../fonts/RFG89.otf')  format('truetype'), 
+   		url('../fonts/RFG89.svg#RFG49') format('svg'); 
+   	font-weight: 700;
+   	font-style: normal;
+   	}  
+   	@rf: Reforma, Arial, sans-serif;
+   	.rf-light {
+   		font-family: @rf;
+   		font-weight: 100;
+   	}
+   	.rf-normal {
+   		font-family: @rf;
+   		font-weight: 400;
+   	}
+   	.rf-semi {
+   		font-family: @rf;
+   		font-weight: 600;
+   	}
+   	.rf-bold {
+   		font-family: @rf;
+   		font-weight: 700;
+   	}
+   	@base-font-size: 30px;
+   	h1,
+   	h2,
+   	h3,
+   	h4,
+   	h5,
+   	h6 {
+   		.rf-semi;
+   	}
+
+   	h1 {
+   		font-size: 36px;
+   		margin: 50px 0 35px;
+   	}
+
+   	h2 {
+   		font-size: 30px;
+   		margin: 30px 0 20px;
+   	}
+
+   	h3 {
+   		font-size: 24px;
+   	}
+
+   	h4 {
+   		font-size: 24px;
+   		font-family: Arial;
+   		margin: 20px 0 10px;
+   	}
+
+   	h5 {
+   		font-size: 21px;
+   		font-family: Arial;
+   		margin: 15px 0 10px;
+   	}
+
+   	h6 {
+   		font-size: 14px;
+   		font-family: Arial;
+   		margin: 10px 0 10px;
+   	}
+   	ul,ol {
+   		padding-left: 16px;
+   	}
+   	p {
+   		font-size: 16px;
+   		line-height: 1.6;
+   	}
+   	.red-darkly {
+   		color: #d1030a;
+   	}
+   	.blue {
+   		color: #2ba6cb !important;
+   	}
+   	.red {
+   		color: rgb(211, 19, 25);
+   	}
+   	.contact-title {
+   		font-size: 48px;
+   		margin: 40px 0 30px;
+   	}
+   	.title-contanct-2 {
+   		font-size: 60px;
+   		.rf-normal;
+   		margin: 0;
+   		a {
+   			text-decoration: none;
+   			color: #d31319;
+   		}
+   	}
+   	.catalog-titile {
+	//text-align: center;
+	padding: 45px 0px 5px 30px;
+	margin: 0px;
+}
+.catalog-subtitile-up {
+	line-height: 21px !important;
+	font-size:14px !important;
+	padding-bottom: 25px !important;
+}
+.title-contanct-3 {
+	font-size: 18px;
+	font-family: Arial;
+	margin: 0;
+	margin-top: 60px;
+	a {
+		text-decoration: none;
+		color: #d31319;
+	}
+}
+.title-1 {
+	background: #f1f1f1;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	span {
+		&:nth-child(1) {
+			background: #fff;
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 3px;
+			height: 49px;
+		}
+		&:nth-child(2) {
+			display: inline-block;
+			vertical-align: middle;
+			color: #c52a27;
+			font-weight: bold;
+			line-height: 49px;
+			font-size: 16px;
+			margin: 0;
+			padding-left: 15px;
+			width: calc(~"100% - 60px");
+		}
+	}
+}
+
